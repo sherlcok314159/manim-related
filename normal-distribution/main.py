@@ -13,7 +13,7 @@ class Background(Scene):
     """
     def construct(self):
         title = TexText("Examination").to_corner(UL)
-        exam = ImageMobject("./resources/exam.png").scale(1.40)
+        exam = ImageMobject("resources/exam.png").scale(1.40)
         self.play(
             ShowCreation(title),
             FadeIn(exam),
@@ -1159,7 +1159,7 @@ class Acknowledgement(Scene):
         )
         self.save_state()
 
-        jerison = ImageMobject("./resources/jerison.jpeg").next_to(title, 2 * DOWN)
+        jerison = ImageMobject("resources/jerison.jpeg").next_to(title, 2 * DOWN)
         intro_jerison1 = Tex("\\text{David Jerison}").shift(3 * UP)
         intro_jerison2 = Tex("\\rightarrow \\text{Professor of Mathematics, MIT}").shift(2.6 * RIGHT + 2 * UP)
         intro_jerison3_1 = Tex("\\rightarrow \\text{Main Interests: }").shift(1 * UP)
@@ -1202,7 +1202,7 @@ class Acknowledgement(Scene):
         self.embed()
         self.restore()
 
-        grant = ImageMobject("./resources/grant.jpeg").next_to(title, 2 * DOWN)
+        grant = ImageMobject("resources/grant.jpeg").next_to(title, 2 * DOWN)
         intro_grant1 = Tex("\\text{Grant Sanderson}").shift(3 * UP)
         intro_grant2 = Tex("\\rightarrow \\text{Owner of 3Blue1Brown}").shift(2 * UP + 1.0 * RIGHT)
         intro_grant3 = Tex("\\rightarrow \\text{Creator of Manim}", isolate=["Manim"]).shift(0.3 * UP)
